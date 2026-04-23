@@ -9,7 +9,7 @@ else
 endif
 
 all:
-	$(CC) -Iinclude -Llib -o $(TARGET) dp.c -lraylib -lm $(FRAMEWORKS)
+	$(CC) -Iinclude -o $(TARGET) dp.c lib/libraylib.a -lm $(FRAMEWORKS)
 
 check:
 	@echo "Running tests... (none defined)"
